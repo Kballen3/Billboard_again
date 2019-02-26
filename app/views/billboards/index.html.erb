@@ -1,0 +1,4 @@
+<%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+<h3>Welcome <%= current_user.first_name %></h3>
+<p>Which Billboard would you like to see?</p>
+<%= button_to 'Create Billboard', billboards_path %>
